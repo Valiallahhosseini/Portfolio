@@ -1,0 +1,405 @@
+<html dir="ltr"  lang="en">
+    <body>
+        <head>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+                body {
+                    padding: 0;
+                }
+                #gray {
+                    background: #F8F8F8;
+                    width: 1439px;
+                    height: 400px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                }
+                .container {
+                    width: 800px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                #hello {
+                    width: 129px;
+                    height: 300px;
+                    margin-left: 20px;
+                    margin-left: 191px;
+                    margin-top: 311px;
+                }
+                #hello img {
+                    margin-left: 20px;
+                }
+
+                #middle > div {
+                    display: flex;
+                    gap: 100px;
+                }
+
+               
+                #middle .left {
+                    width: 350px;
+                    height: 1100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    
+                }              
+                #img p {
+                    margin: 0;
+                    margin-top: 40px;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #333333;
+
+                }
+                .roboto700 {
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 100%;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                }
+                #skills  {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+              #skills div div {
+                padding: 6 0;
+               display: flex;
+              }
+              #skills div span {
+                flex-grow: 1;
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+                color:#333333;
+                ;
+              }
+              #certificate {
+                display: flex;
+                flex-direction: column;
+                gap:12px;
+              }
+              #certificate div {
+                display: flex;
+                flex-direction: column;
+              }
+              .times700 {
+                font-family: Times New Roman;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 18px;
+                letter-spacing: 0px;
+
+              }
+              .roboto700faint {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #B8B8B8;
+              }
+              #header section {
+                display: flex;
+                flex-direction: column;
+                gap: 0px; 
+                margin-bottom: 50px;
+              }
+              #header span, h1, h2 {
+                margin: 0;
+              }
+
+              #header h1 {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 100%;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                margin-bottom: 6px;
+                margin-top: 40px;
+
+
+
+              }
+              #header h2 {
+                font-family: Roboto;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                margin-bottom: 24px;
+
+              }
+              .roboto400 {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0%;
+                color: #B8B8B8;
+                margin: 0;
+                padding: 0;
+              }
+              #header div > span {
+                margin-right: 14px;
+              }
+              .inter {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #B8B8B8;
+
+              }
+              #experince {
+                display: flex;
+                flex-direction: column;
+                gap:12px;
+              }
+              #experince h2, h3, h4, p {
+                margin: 0;
+              }
+              #experince h4 {
+                font-family: Times New Roman;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color:#B8B8B8;
+              }
+              #experince p {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #B8B8B8;
+              }
+              #ref h3 {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #B8B8B8;
+
+              }
+              #ref h4 {
+                font-family: Times New Roman;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #333333;
+
+              }
+              #ref span {
+                font-family: Times New Roman;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #B8B8B8;
+              }
+              #ref {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+              }
+              #interests .row {
+                display: flex;
+                flex-direction: column;
+                width: 60px;
+               
+              
+              }
+              #interests {
+                width: 264px;
+              }
+              
+              #interests > div {
+                display: flex;
+                flex-wrap: wrap;
+                
+              }
+
+            
+            .top {
+                padding: 12px;
+                width: 48px;
+                height: 48px;
+                align-items: center;
+              }
+            .bottom {
+                width: 47px;
+                height: 13px;
+                align-items: center;
+                padding: 0 4px;
+               
+              }
+              .foo {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                margin-top: 100px;
+              }
+             
+
+              
+
+
+            </style>
+        </head>
+        <section id="gray">
+            <section>
+                <div id="hello">
+                    <img src="./Assets/Images/Hello,.svg" alt="#" title="#">
+                </div>
+            </section>
+            <section id="middle">
+                <div class="container">
+                    <section class="left">
+                        <section id="img">
+                            <img src="./Assets/Images/avatar-2.svg" alt="#" title="CV-Photo" width="350px">
+                            <p>I’m a profesional FrontEnd Developer, Provide awsome codeing services to my clients. my vision is to make my clients happy and satisfied.</p>
+                        </section>
+                        <section id="skills">
+                                <span class="roboto700">Skills</span>
+                                <div>
+                                    <div>
+                                        <span>HTML</span>
+                                        <img src="./Assets/Images/scale 1.svg" title="#" alt="#">
+                                    </div>                                                     
+                                    <div>
+                                        <span>CSS</span>
+                                        <img src="./Assets/Images/scale 2.svg" title="#" alt="#">
+                                    </div>                                                     
+                                    <div>
+                                        <span>Javascript</span>
+                                        <img src="./Assets/Images/scale 3.svg" title="#" alt="#">
+                                    </div>                                                     
+                                    <div>
+                                        <span>VUE</span>
+                                        <img src="./Assets/Images/scale 4.svg" title="#" alt="#">
+                                    </div>                                                     
+                                    <div>
+                                        <span>Photoshop</span>
+                                        <img src="./Assets/Images/scale 5.svg" title="#" alt="#">
+                                    </div> 
+                                </div>                                                                              
+                        </section>
+                        <section id="certificate">
+                            <span class="roboto700">Certificate</span>
+                            <div>
+                                <span class="roboto700faint">2022</span>
+                                <span class="times700">CodingFront</span>
+                                <span class="roboto700faint">Junior FrontEnd Developer Bootcamp</span>
+                            </div>
+                            <div>
+                                <span class="roboto700faint">2022</span>
+                                <span class="times700">Freecode Camp</span>
+                                <span class="roboto700faint">Responsive Web Design</span>
+                                <span class="roboto700faint">Quality Assurance</span>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="right">
+                        <section id="header">
+                            <div>
+                                <h1>Bahman Esfandiari</h1>
+                                <h2>FrontEnd Developer</h2>
+                            </div>
+                            <section>
+                                <span class="roboto400">June 15, 1994</span>
+                                <span class="roboto400">bahman.esfandiari@gmail.com</span>
+                                <span class="roboto400">(+98) 912 183 5455</span>
+                                <span class="roboto400">Tehran, Iran</span>
+                            </section>
+                            <div>
+                                <img src="./Assets/Images/telegram 1.svg" alt="#">
+                                <span class="inter">b.esfandiari</span>
+                                <img src="./Assets/Images/github 1.svg" alt="#">
+                                <span class="inter">b.esfandiari</span>
+                            </div>
+                        </section>
+                        <div class="foo">
+                            <section id="experince">
+                            <h2 class="roboto700">Experince</h2>
+                            <div>
+                                <h3 class="times700">BioLink</h3>
+                                <h4>FrontEnd Developer</h4>
+                                <p>BioLink is a static website with a company’s or a person’s all essential links and information on it so that user will put a single link on social media.</p>
+                            </div>
+                            <div>
+                                <h3 class="times700">Tacohead</h3>
+                                <h4>FrontEnd Developer</h4>
+                                <p>Tacohead is a static menu website. With the help of Tachohead, user of a service (like resturants, cafes, beauty salons) can see the price before ordering.</p>
+                            </div>
+                        </section>
+                        <section id="ref">
+                            <h2 class="roboto700">Refernce</h2>
+                            <div>
+                                <h3 class="times700">Sr. Developer</h3>
+                                <h4>Javid Izadfar</h4>
+                                <span>Email: javid.izadfar@gmail.com</span>
+                            </div>
+                            <div>
+                                <h3 class="times700">Sr. Developer</h3>
+                                <h4>Milad Heidari</h4>
+                                <span>Phone: (+98) 912 345 6789</span>
+                            </div>                           
+                        </section>
+                        <section id="interests">
+                            <h2 class="roboto700">Refernce</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="top"><img src="./Assets/Images/Icon.svg" alt="#" title="#" width="24"></div>
+                                    <div class="bottom"><span>Game</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="top"><img src="./Assets/Images/camera 1.svg" alt="#" title="#" width="24"></div>
+                                    <div class="bottom"><span>Photos</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="top"><img src="./Assets/Images/headphone 1.svg" alt="#" title="#" width="24"></div>
+                                    <div class="bottom"><span>Music</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="top"><img src="./Assets/Images/crypto 1.svg" alt="#" title="#" width="24"></div>
+                                    <div class="bottom"><span>Crypto</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="top"><img src="./Assets/Images/airplane 1.svg" alt="#" title="#" width="24"></div>
+                                    <div class="bottom"><span>Travel</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="top"><img src="./Assets/Images/cooking 1.svg" alt="#" title="#" width="24"></div>
+                                    <div class="bottom"><span>Food</span></div>
+                                </div>
+                            </div>
+                        </section>
+                        </div>                     
+                    </section>
+                </div>
+            </section>
+        </section>
+
+    </body>
+</html>

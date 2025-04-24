@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding: 0;
+    background-color: #474C59;
+    text-align: center;
+    color: #D9D1C7;
+    font-family: lato;
+
+}
+img {
+    margin: 0;
+    display: block;
+}
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#albums {
+    text-align: left;
+}
+header .bottom-wrap {
+    display: flex;
+    /* gap: 113px; */
+    justify-content: space-between;
+    align-items: center;
+    /* height: 745px; */
+    margin: 222px 0;
+}
+header .album-wrap {
+    display: flex;
+    position: relative;
+    perspective: 50cm;
+
+    
+}
+header .album-wrap .disc {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-20%);
+    transition: all 1s 100ms;
+}
+header .album-wrap .cover {
+    z-index: 1;
+    transition: all 500ms;
+    transform-origin: left;
+}
+header .album-wrap:hover .disc {
+    transform: translatex(40px) rotate(45deg);
+
+}
+header .album-wrap:hover .cover {
+    transform: rotatey(-40deg);
+}
+header h1 {
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 20px;
+}
+header h2 {
+font-weight: 900;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+header .right-wrap {
+    width: 50%;
+    text-align: left;
+}
+#header h3 {
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+header p{
+font-family: Roboto;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+ header .cta {
+    height: 48px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    gap: 8px;
+ }
+ header .cta:hover {
+    background-color: black;
+    color: white;
+   
+ }
+ header svg {
+    fill: currentColor;
+ }
+header a:hover svg {
+    fill: white;
+}
+ /* header .cta:hover a {
+    background-color: white;
+ } */
+ header a {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+    padding: 12 24px;
+    text-decoration: none;
+ }
+#tracks {
+    text-align: left;
+}
+
+ #tracks .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+    padding: 0 24px;
+ }
+ #tracks .row-wrap {
+    padding: 0;
+    margin: 0;
+    list-style-type:decimal-leading-zero;
+ }
+ #tracks li::marker {
+font-family: Lato;
+font-weight: 300;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+ }
+ #tracks .row:after {
+    content:" ";
+    display: block;
+    border-bottom:1px dashed  #D9D1C7;
+    flex-grow: 1;
+    order:2; 
+}
+ #tracks span {
+font-family: lato;
+font-weight: 300;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+margin: 0;
+order: 3;
+ }
+ #tracks h3 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    margin: 0;
+    display: inline;
+    order:1;
+ }
+ #tracks h2 {
+    text-align: left;
+    margin-bottom: 24px;
+}
+#tracks {
+    margin-bottom: 120px;
+}
+#albums ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#albums li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background-color:#3c404a;
+    padding: 6px;
+}
+#albums li span {
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+#albums li img {
+    margin-bottom: 16px;
+    width: 100%;
+}
+#albums ul {
+    padding: 0;
+    margin: 0;
+}
+#albums h2 {
+font-family: Lato;
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+margin-bottom: 24px;
+}
+ /* mobile */
+@media (width <= 400px) {
+.container {
+    width: 316px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+body {
+    /* width: 360px; */
+}
+header .bottom-wrap {
+    display: block;
+}
+header .cover{
+    width: 241px;
+} 
+header .disc {
+width: 225px;
+margin-left:-25px;   
+}
+header .album-wrap {
+    width: 100%;
+    justify-content: space-between;
+}
+header .right-wrap {
+    width: 100%;
+}
+header  h1 {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+header h2{
+    font-size: 24px;
+}
+header h3{
+    font-size: 16px;
+}
+header p {
+    font-size: 14px;
+}
+header .bottom-wrap {
+    margin-top: 40px;
+}
+header .cta {
+    display: flex;
+}
+#tracks {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#albums li {
+    width: 50%;
+} 
+header .bottom-wrap {
+    margin: 0;
+}
+}
+
+

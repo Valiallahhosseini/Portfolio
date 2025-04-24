@@ -1,0 +1,139 @@
+<html dir="ltr" ang="en">
+    <body>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .parent {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: green;
+            position: relative;        
+            }
+             /*  */
+            .child {
+            margin-top:5%;
+            margin-left:45%;
+            margin-right: auto;
+            position: absolute;
+            display:block;
+            }
+            .photo {
+            border-radius: 100% 100% 100% 100%;
+            width: 95px;
+            height: 95px;
+            border: 1px solid white;
+            }
+            .name {
+            margin-top:5%;
+            margin-left: 0%;
+            width: auto;
+            translate: -35px;
+            color: white;
+            }
+            .title {
+            margin-top:0px;
+            width: auto;
+            color:gray;
+            translate: -25px;
+            
+            }
+            .in-line {
+                display: inline-block;
+                width:50px;          
+            }
+            .block {
+            translate: -50px;
+            }
+            .contact-link {
+                translate: -90px;
+            }
+            .icon {
+                width:40px;
+                height: 40px;
+            }
+            .contact {
+                width: 100px;
+                display: inline-block;
+            }
+            .phone-link {
+                width: 100px;
+                display: inline-block;
+                margin-top:15px;
+
+            }
+            .end {
+                background-color: black;
+                margin-top: 130px;
+                translate: -50px;
+                border-radius: 5px 5px 5px 5px;
+                width:200px;
+                color: white;
+                text-align: center;
+                display: inline-block;
+            }
+            a:link {
+                color:white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color:pink;
+                text-decoration: underline;
+            }
+            a:hover, a:active {
+                background-color: red;
+            }
+          
+
+        </style>
+
+        <div class="parent">
+            <div class="child"><img src="./Asset/images/Profile Picture.jpg" class="photo">
+                <div class="name">
+                    <p><b>Valiallah Hosseininasab</b></p>
+                </div>
+                <div class="title">
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="contact-link">
+                    <ul>
+                        <li class="in-line">
+                            <a href="./Asset/images/phone-call.png" title="Phone" alt="contact info" class="alt">
+                                <img src="./Asset/images/phone-call.png" class="icon"></a>
+                        </li>
+                        <li class="in-line">
+                            <a href="https://www.linkedin.com/in/valiallah-hosseininasab-08191b87/" title="Linkdin" alt="contact info" class="alt">
+                                <img src="./Asset/images/linkedin-logo.png" class="icon"></a>
+                        </li>
+                        <li class="in-line">
+                            <a href="https://www.instagram.com/" title="instagram" alt="contact info" class="alt">
+                                <img src="./Asset/images/instagram-logo.png" class="icon"></a></li>
+                        <li class="in-line">
+                            <a href="./Asset/images/telegram.png" title="telegram" alt="contact info" class="alt">
+                                <img src="./Asset/images/telegram.png" class="icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <span class="contact">Email:</span>
+                    <span class="contact">
+                        <a href="mailto:Hosseininasab205@gmail.com">Hosseininasab205@gmail.com</a></span>
+                </div>
+                <div class="block">
+                    <span class="phone-link">phone:</span>
+                    <span class="phone-link">
+                        <a href="callto:5712323598">+15712323598</a></span>
+                </div>
+                <div class="end">
+                    <Span>
+                        <a href="./Asset/images/Hosseininasab_Resume.pdf" title="Click for my resume">See My Resume</a>
+                    </Span>
+                </div>
+        </div>
+        
+    </body>
+
+</html>

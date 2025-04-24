@@ -1,0 +1,403 @@
+<html dir="ltr" lang="en">
+    <body>
+        <head>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+                body {
+                    margin-left: 0px;
+                    padding: 0;
+                    
+                }
+                .sections {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                }
+                section.left {
+                    width: 719px;
+                    height: 1400px;
+
+                }
+                section.right {
+                    background-color: #F8F8F8;
+                    ;
+                    width: 719px;
+                    height: 1400px;
+
+                }
+                .container {
+                    width: 800px;
+                    margin-right: auto;
+                    margin-left: 320px;
+                    position: absolute;
+                    margin-top: 90px;
+
+
+                }
+                section.middle {
+                    height: 1003px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+                .parent {
+                    position: relative;
+                }
+                .left-top-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+                .left-box {
+                    width: 347px;
+                    display: flex;
+                    flex-direction: column;
+                    gap:50px;
+                    margin-top: 240px;
+
+                }
+                .left-top-image-wrap {
+                }
+                .left-top-middle-text-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                }
+                .left-top-bottom-text-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+
+                }
+                .title-text {
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 100%;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+
+                }
+                .faint-text {
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0px;
+
+                }
+                .faint-text-times {                  
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0px;
+
+                }
+
+                .subtitle-text {
+                    font-family: Times New Roman;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 18px;
+                    letter-spacing: 0px;
+                }
+                .imges-wrap {
+                    display: flex;
+                    list-style: none;
+                    flex-wrap: wrap;
+                    align-items: start;
+                    padding: 0;
+                    justify-content: start;
+                    gap:8px;
+
+                }
+                .img-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    align-items: center;
+
+                }
+                .right-box {
+                    margin-left: 53px;
+                    width: 415px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    margin-top: 150px;
+                }
+                .right-top-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap:6px;
+                    margin-left: 50px;
+                }
+                .name {
+                    font-family: Roboto;
+                    font-weight: 100;
+                    font-size: 64px;
+                    line-height: 64px;
+                    letter-spacing: 0%;
+                    color: #333333;
+
+                }
+                .lastname {
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 72px;
+                    line-height: 72px;
+                    letter-spacing: 0%;
+
+                }
+                .FronEnd-Dev-box {
+                    background-color: black;
+                    width: 138px;
+                    height: 29px;
+                    padding: 6 16 4 16px;
+
+
+                }
+                .FronEnd-Dev-text {
+                    font-family: Roboto;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                    color: #F8F8F8;
+                }
+                .social-text {
+                    font-family: Inter;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #B8B8B8;
+                    margin-left:6px;
+                    margin-right: 14px;
+                }
+                .subskills-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                }
+                .subskills-img-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    margin-top: 35px;
+
+                }
+                .subkills {
+                    display: flex;
+                    gap: 50px;
+                    align-items: center;
+                    margin-left: 10px;
+
+
+                }
+                .right-skills-box {
+                    display: flex;
+                    align-items: start;
+                   
+                   
+                }
+                .biolink-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    width: 350px;
+                }
+                .faint-text-right {
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0px;
+
+                }
+                .biolink-box-two {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    width: 346px;
+                }
+                .contact-info {
+                    display: flex;
+                    gap: 12px;
+                }
+                .middle-bottom {
+                    display: flex;
+                }
+                
+                
+
+
+           
+               
+                
+            </style>
+        </head>
+        <div class="parent">
+            <div class="sections">
+                <Section class="left"></Section>
+                <Section class="right"></Section>
+            </div>
+            <div class="container">
+                <section class="middle">
+                    <div class="contact-info">
+                        <span>Call</span>
+                        <span>(+98)9121835455</span>
+                        <span>or</span>
+                        <span>Email</span>
+                        <span>‌bahman.esfandiari@gmail.com</span>
+                    </div>
+                    <div class="middle-bottom">
+                        <div class="left-box">
+                            <div class="left-top-box">
+                                <div class="left-top-image-wrap"><img src="./Assets/Images/Group.svg"></div>
+                                <span class="title-text">Certificate</span>
+                                <div class="left-top-middle-text-wrap">
+                                    <span class="faint-text">2022</span>
+                                    <span class="subtitle-text">CodingFront</span>
+                                    <span class="faint-text-times">Junior FrontEnd Developer Bootcamp</span>
+                                </div>                                                         
+                                <div class="left-top-bottom-text-wrap">
+                                    <span class="faint-text">2022</span>
+                                    <span class="subtitle-text">FreeCodeCamp</span>
+                                    <span class="faint-text-times">Responsive Web Design</span>
+                                    <span class="faint-text-times">Quality Assurance</span>
+                                </div>
+                            </div>
+                            <div class="left-top-box">
+                                <div class="left-top-image-wrap"><img src="./Assets/Images/Adamak.svg"></div>
+                                <span class="title-text">Reference</span>
+                                <div class="left-top-middle-text-wrap">
+                                    <span class="faint-text">Sr. Developer</span>
+                                    <span class="subtitle-text">Javid Izadfar</span>
+                                    <span class="faint-text-times">Email: javid.izadfar@gmail.com</span>
+                                </div>                                                         
+                                <div class="left-top-bottom-text-wrap">
+                                    <span class="faint-text">Sr. Developer</span>
+                                    <span class="subtitle-text">Milad Heydari</span>
+                                    <span class="faint-text-times">Phone: (+98) 912 345 6789</span>
+                                </div>
+                            </div>
+                            <div class="left-top-box">
+                                <div class="left-top-image-wrap"><img src="./Assets/Images/Vector.svg"></div>
+                                <span class="title-text">interests</span>
+                                <div class="imges-wrap">
+                                    <div class="img-wrap"> 
+                                        <img src="./Assets/Images/icon.svg">
+                                        <span>Game</span>
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img src="./Assets/Images/camera 1.svg">
+                                        <span>Photos</span>
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img src="./Assets/Images/headphone 1.svg">
+                                        <span>Music</span>
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img src="./Assets/Images/crypto 1.svg">
+                                        <span>Crypto</span>
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img src="./Assets/Images/airplane 1.svg">
+                                        <span>Airplane</span>
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img src="./Assets/Images/cooking 1.svg">
+                                        <span>Food</span>
+                                    </div>
+                                </div>                          
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <div class="right-top-box">
+                                <span class="name">Bahman</span>
+                                <span class="lastname">Esfandiari</span>
+                                <div class="FronEnd-Dev-box">
+                                    <span class="FronEnd-Dev-text">FrontEnd Dev</span>
+                                </div>
+                                <div>
+                                    <img src="./Assets/Images/telegram 1.svg">
+                                    <span class="social-text">b.esfandiari</span>
+                                    <img src="./Assets/Images/github 1.svg">
+                                    <span class="social-text">b.esfandiari</span>
+                                </div>
+                            </div>
+                            <div class="right-skills-box">
+                                <div>
+                                    <img src="./Assets/Images/number.svg" width="40px" height="25px">
+                                </div>                         
+                                <div class="subkills">
+                                    <div class="subskills-box">  
+                                        <span class="title-text">Skills</span>                                
+                                        <span class="faint-text">HTML</span>
+                                        <span class="faint-text">CSS</span>
+                                        <span class="faint-text">JavaScript</span>
+                                        <span class="faint-text">VUE</span>
+                                        <span class="faint-text">Photoshop</span>
+                                    </div>
+                                    <div class="subskills-img-box">
+                                        <img src="./Assets/Images/scale.svg">
+                                        <img src="./Assets/Images/scale (1).svg">
+                                        <img src="./Assets/Images/scale (2).svg">
+                                        <img src="./Assets/Images/scale (3).svg">
+                                        <img src="./Assets/Images/scale (4).svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-skills-box">
+                                <div>
+                                    <img src="./Assets/Images/number (1).svg" width="40px" height="25px">
+                                </div>                         
+                                <div class="subkills">
+                                    <div class="subskills-box">  
+                                        <span class="title-text">Exprience</span>
+                                        <div class="biolink-box">
+                                        <span class="subtitle-text">BioLink</span>
+                                        <span class="faint-text-times">Frontend developer</span>
+                                        <span class="faint-text-right">BioLink is a static website with a company’s or a person’s all essential links and information on it so that user will put a single link on social media.</span>
+                                        </div>                                                                   
+                                        <div class="biolink-box">
+                                        <span class="subtitle-text">Tacohead</span>
+                                        <span class="faint-text-times">Frontend developer</span>
+                                        <span class="faint-text-right">Tacohead is a static menu website. With the help of Tachohead, user of a service (like resturants, cafes, beauty salons) can see the price before ordering.</span>
+                                        </div>                                                                   
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="right-skills-box">
+                                <div>
+                                    <img src="./Assets/Images/number.svg" width="40px" height="25px">
+                                </div>                         
+                                <div class="subkills">
+                                    <div class="subskills-box">  
+                                        <span class="title-text">Education</span>                                
+                                        <div class="biolink-box-two">
+                                            <span class="faint-text">2012-2018</span>
+                                            <span class="subtitle-text">Azad Islamic University, Central Tehran Branch</span>                                 
+                                            <span class="faint-text-times">Bachelor of Software Engineering</span>
+                                        </div>  
+                                    </div>                    
+                                </div>
+                            </div>
+                        </div>            
+                    </div>                  
+                </section>
+            </div>      
+        </div>              
+    </body>
+</html>
