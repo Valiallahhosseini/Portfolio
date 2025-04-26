@@ -1,24 +1,358 @@
-/* .Hi{
-    background-color: red;
-    position: fixed;
-    top:0;
-    left: 0;
+:root {
+    --font-sm:14px;
+    --font-n:16px;
+    --font-L:36px;
+    --font-XL:48px;
+
+    --font-vaz:Vazirmatn;
+    --font-lale:Lalezar;
+
+    --weight-s:400;
+    --weight-m:500;
+    --weight-L:700;
+
+    --line-height-n:1;  
+
+    --color-beige: #1B1717A6;
+    --color-accent: #CE1212;
+    --color-faint: #1B17171A;
+    --color-black: black; 
+    --color-white: white;
+    --color-green:#006837; 
+    --color-shaddow: #009245; 
+    --color-red: #C1272D; 
+    --color-lightgreen:#159B1A;
+    --color-lightgreenb: #2BB22B;
+    --color-lightred:#DD1F2D; 
+    --color-blue:#063990; 
+    --color-lightblue:#0C53A8; 
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  text-align: center;
+  background-color: beige;
+  padding-left: 24px;
+  padding-right: 18px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 354px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#hero .container {
+  text-align: right;
+}
+#countries .container {
+  margin-bottom: 60px;
+}
+header img {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.melli-shoe {
+    display: none;
+}
+#hero .first-img, .second-img, .third-img, .fourth-img {
+    position: absolute;
+}
+#hero .img-wrap {
+    position: relative;
     right: 0;
-    display: block;
-} */
- .animation {
-    background-color: #ff0000;
-    height: 200px;
-    animation-name: cop;
-    animation-duration: 500ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
- }
- @keyframes cop {
-    from {
-        background-color: red;
+    top: 0;
+}
+#hero .first-img {
+    right: 0;
+    top: 0;
+    z-index: 4;
+}
+#hero .second-img {
+    right: 15px;
+    top: 0;
+    z-index: 3;
+}
+#hero .third-img {
+    top: 0;
+    right: 30px;
+    z-index: 2;
+}
+#hero .fourth-img {
+    right: 45px;
+    top: 0;
+    z-index: 1;
+}
+#hero .rev-wrap {
+    display: flex;
+    gap: 79px;
+}
+#hero .rev-text-wrap {
+    flex-grow: 1;
+}
+#hero .rev-text-wrap span {
+    font-size: var(--font-sm);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-m);
+    line-height: var(--line-height-n)
+    letter-spacing: 0;
+    margin: 0;
+}
+#hero .satisfaction, 
+#hero p,
+.contact-button-wrap a,
+#countries span,
+#models h3,
+#models h5 {
+    color: var(--color-beige)
+    
+}
+h1 {
+    font-size: var(--font-XL);
+    font-family: var(--font-lale);
+    font-weight: var(--weight-s);
+    line-height: var(--line-height-n);
+    margin: 10px 0 10px 0;
+}
+#hero p {
+    font-size: var(--font-sm);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-s);
+    line-height: var(--line-height-n)
+    letter-spacing: 0;
+    margin: 10px 0 10px 0;
+}
+.contact-button {
+    border: 1px solid var(--color-beige);
+    border-radius: 35px;
+    text-decoration: none;
+    padding: 8px 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-sm);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-s);
+    line-height: var(--line-height-n)
+    letter-spacing: 0;
+    
+}
+.contact-button-wrap, .cta-button-wrap {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.cta-button  {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 35px;
+    text-decoration: none;
+    padding: 8px 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-sm);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-s);
+    line-height: var(--line-height-n)
+    letter-spacing: 0;
+    gap: 10px 
+}
+#hero {
+    margin-bottom: 60px;
+}
+#countries ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+#countries li {
+    width: 25%;
+    padding: 10px;
+}
+#countries h2 {
+    font-size: var(--font-n);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-m);
+    line-height: 1;
+    letter-spacing: 0;
+}
+#countries span {
+    font-size: var(--font-sm);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-m);
+    line-height: 1;
+    letter-spacing: 0;
+}
+#models .bottom-wrap {
+    padding: 35px 0;
+}
+#models h2 {
+    font-size: var(--font-L);
+    font-family: var(--font-lale);
+    font-weight: var(--weight-s);
+    line-height: var(--line-height-n);
+}
+#models h3, h5 {
+    font-size: var(--font-sm);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-s);
+    line-height: var(--line-height-n)
+    letter-spacing: 0;
+}
+#models h4 {
+    font-size: var(--font-n);
+    font-family: var(--font-vaz);
+    font-weight: var(--weight-m);
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0;
+    
+}
+#models h5 {
+    margin: 0;
+}
+#models img {
+    margin: 15px 0;
+}
+
+/* desktop */
+@media (width>=1140px) {
+    .container {
+        width: 1140px;
     }
-    to {
-        background-color: blue;
+    .melli-shoe {
+        display: block;
+        margin: 0;
     }
- }
+    #hero .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero .left-wrap {
+        padding: 82px 70px 82px 0;
+    }
+    #hero .buttons-wrap {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+    header img {
+        margin-bottom: 0;
+        margin-top: 70px;
+        width: 90px;
+        height: 60px;
+    }
+    .contact-button-wrap a {
+        transition: 100ms;
+
+    }
+ 
+    .contact-button-wrap:hover a {
+        color: var(--color-black);
+    }
+    
+    .cta-button-wrap a {
+        transition: all 100ms;
+    }
+    .cta-button-wrap:hover a {
+        background-color: brown;
+    }
+    #countries .container {
+        width: 418px;
+    }
+    #countries .china, .italy, .america {
+        position: relative;
+    }
+    #countries .china:after,
+    #countries .italy:after,
+    #countries .america:after{
+        content: " ";
+        border: 1px solid var(--color-faint);
+        height: 64px;
+        position: absolute;
+        right: 100px;
+        bottom: 25px;
+    }
+    .china:hover .flag-green
+    {
+        fill:var(--color-green)
+    }
+    .china:hover .flag-red {
+        fill:var(--color-red)
+    }
+    .china:hover .flag-shaddow {
+        fill:var(--color-shaddow)
+    }
+    .italy:hover .flag-red {
+        fill: var(--color-red);
+    }
+    .italy:hover .flag-green {
+        fill: var(--color-green);
+    }
+    .italy:hover .flag-lightgreen {
+        fill: var(--color-lightgreen);
+    }
+    .italy:hover .flag-lightgreeb {
+        fill: var(--color-lightgreenb);
+    }
+    .america:hover .flag-red {
+        fill: var(--color-red);
+    }
+    .america:hover .flag-green {
+        fill: var(--color-green);
+    }
+    .america:hover .flag-lightgreen {
+        fill: var(--color-lightgreen);
+    }
+    .america:hover .flag-blue {
+        fill: var(--color-blue);
+    }
+    .america:hover .flag-lightred {
+        fill: var(--color-lightred);
+    }
+    
+    .uk:hover .flag-red {
+        fill: var(--color-red);
+    }
+    .uk:hover .flag-green {
+        fill: var(--color-green);
+    }
+    .uk:hover .flag-lightgreen {
+        fill: var(--color-lightgreen);
+    }
+    .uk:hover .flag-blue {
+        fill: var(--color-blue);
+    }
+    .uk:hover .flag-lightred {
+        fill: var(--color-lightred);
+    }
+    .uk:hover .flag-lightblue {
+        fill:var(--color-lightblue)
+    }
+   #models .bottom-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 45px;
+   } 
+   #models .item-wrap {
+    width: 25%;
+    padding-right: 25px;
+    margin-left: ;
+   }
+   /* #models .item-wrap img { */
+   margin-bottom: 15px;
+   }  margin-top: 0;
+   
+   
+}
