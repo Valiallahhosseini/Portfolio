@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#square {
+    position: relative;
+    /* background-color: red; */
+    margin: 200px 0 0 200px;
+    width: 100px;
+    height: 57.73px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    /* background-color: red; */
+  }
+  #square:before {
+    content: "";
+    position: absolute;
+    width: 57.73px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    background-color: blue;
+    transform: rotate(-32deg);
+    transform-origin: left;
+    top: -1px;
+    left: -1px;
+      }
+  #square::after {
+    content: "";
+    position: absolute;
+    width: 57.73px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    background-color: blue;
+    transform: rotate(32deg);
+    transform-origin: right;
+    top: -1px;
+    right:-1px;
+  }
+  #pentagon {
+    position: relative;
+    /* background-color: red; */
+    margin: 200px 0 0 200px;
+    width: 100px;
+    height: 67.73px;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    transform: rotateZ(90deg);
+    left: -215px;
+  }
+  #pentagon:before {
+    content: "";
+    position: absolute;
+    width: 57.73px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    background-color: blue;
+    transform: rotate(-32deg);
+    transform-origin: left;
+    top: -1px;
+    left: -1px;
+      }
+  #pentagon::after {
+    content: "";
+    position: absolute;
+    width: 57.73px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    background-color: blue;
+    transform: rotate(32deg);
+    transform-origin: right;
+    top: -1px;
+    right:-1px;
+  }
+
+  .circle-p {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute; 
+    transform: translateY(-50%) translateX(-50%);
+    bottom: -57%;
+    left: 50%;
+    z-index: 3;
+    transition: all 2s;
+
+  }
+  .circle-p span {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translatey(-50%) rotateZ(-90deg);
+    transition: all 100ms;
+  }
+  h2 {
+    transform: rotateZ(-90deg);
+    margin-left: 45px;
+    margin-right: 200px;
+    margin-top: -50px;
+  }
+  .logo-wrap:hover span {
+    filter: drop-shadow(2px 2px 2px yellow);
+  }
+  .inner-square {
+    /* position: absolute; */
+    top: 100px;
+    margin-top: 100px;
+    visibility: hidden;
+    background-color: blu;
+    width: 100px;
+    height: 57.73px;
+    margin-left: -2px;
+    background-color: darkorchid;
+  }
+  .inner-square::after {
+    content: "";
+    position: absolute;
+    width: 57.73px;
+    visibility: visible;
+    border-bottom: 2px solid red;
+    position: absolute;
+    background-color: blue;
+    transform: rotate(-32deg);
+    transform-origin: right;
+    top: 56.73px;
+    right:-1px;
+  }
+  .inner-square::before {
+    content: "";
+    position: absolute;
+    width: 57.73px;
+    visibility: visible;
+    border-bottom: 2px solid red;
+    position: absolute;
+    background-color: blue;
+    transform: rotate(-148deg);
+    transform-origin: right;
+    top: 56.73px;
+    left:-59px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute; 
+    transform: translateY(-50%) translateX(-50%);
+    bottom: -89%;
+    left: 50%;
+    z-index: 3;
+    transition: all 2s;
+
+  }
+  .circle span {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 900;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translatey(-50%);
+    transition: all 100ms;
+  }
+
+  .circle:hover span {
+    filter: drop-shadow(2px 2px 2px yellow);
+  }
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  h1 {
+    margin-top:215px;
+  }
+svg:hover {
+  margin-top: 200px;
+  transform: rotateZ(180deg);
+  transform-origin: center;
+  background-color: blue;
+}

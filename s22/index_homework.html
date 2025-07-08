@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="fact_wrapper">
+        <button onclick="getFact()">Get facts</button>
+        <ul id="fact_box">
+          <li>
+            <div class="fact_wrap">
+              <span></span>
+              <button onclick="getNewFact1()">Get new fact</button>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="fact_wrap">
+              <span></span>
+              <button onclick="getNewFact2()">Get new fact</button>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="fact_wrap">
+              <span></span>
+              <button onclick="getNewFact3()">Get new fact</button>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    // const Array = [1, 2, 3];
+
+    // _.reverse(Array);
+    // console.log(Array);
+
+    let bar = [];
+    const getFact = async () => {
+      const responseArr = new Array(3).fill("");
+      const response = responseArr.map(() =>
+        fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
+      );
+
+      const result = await Promise.all(response);
+
+      const finalResult = await Promise.all(result.json());
+
+      const result1 = await response[0].json();
+      const result2 = await response[1].json();
+      const result3 = await response[2].json();
+
+      const banner_1 = document
+        .getElementById("fact_box")
+        .getElementsByTagName("span")[0];
+      banner_1.innerText = result1.text;
+
+      const banner_2 = document
+        .getElementById("fact_box")
+        .getElementsByTagName("span")[2];
+      banner_2.innerText = result2.text;
+
+      const banner_3 = document
+        .getElementById("fact_box")
+        .getElementsByTagName("span")[4];
+      banner_3.innerText = result3.text;
+    };
+    let foo = true;
+    const getNewFact1 = async () => {
+      const newFact1 = await fetch(
+        "https://uselessfacts.jsph.pl/api/v2/facts/random"
+      );
+      const newResult1 = await newFact1.json();
+      foo = console.log(newResult1);
+
+      const newBanner_1 = document
+        .getElementById("fact_box")
+        .getElementsByTagName("span")[0];
+      newBanner_1.innerText = newResult1.text;
+
+      if (newResult1 === foo) {
+        const loading = document
+          .getElementById("fact_box")
+          .getElementsByTagName("button")[0];
+        loading.innerText = "Loading...";
+      } else {
+        const loading = document
+          .getElementById("fact_box")
+          .getElementsByTagName("button")[0];
+        loading.innerText = "Get new fact";
+      }
+    };
+  </script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="walk-a-mol">
+        <div onclick="startGame()" class="start">
+          <span>Start</span>
+        </div>
+        <ul id="content">
+          <li onclick="Answer()">
+            <span>Click me to get points</span>
+          </li>
+          <li onclick="Answer()">
+            <span>Click me to get points</span>
+          </li>
+          <li onclick="Answer()">
+            <span>Click me to get points</span>
+          </li>
+          <li onclick="Answer()">
+            <span>Click me to get points</span>
+          </li>
+          <li onclick="Answer()">
+            <span>Click me to get points</span>
+          </li>
+        </ul>
+
+        <div class="message"></div>
+        <div class="score"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let interval = null;
+    let i = null;
+    let AnswerByClick = true;
+    const foo = null;
+    let score = 0;
+    let startByClick = true;
+    let fisrtTimeout = null;
+
+    const startGame = () => {
+      Answer();
+    };
+
+    const Answer = () => {
+      if (startByClick) {
+        const buttonActivator = document
+          .getElementById("content")
+          .getElementsByTagName("li")[i];
+
+        const buttonActivatorText = document
+          .getElementById("content")
+          .getElementsByTagName("span")[i];
+
+        if (AnswerByClick) {
+          interval = setInterval(() => {
+            const getRandom = Math.floor(Math.random() * 5);
+            i = getRandom;
+            const buttonActivator = document
+              .getElementById("content")
+              .getElementsByTagName("li")[i];
+            buttonActivator.style.backgroundColor = "Red";
+            const buttonActivatorText = document
+              .getElementById("content")
+              .getElementsByTagName("span")[i];
+            buttonActivatorText.style.display = "block";
+
+            fisrtTimeout = setTimeout(() => {
+              buttonActivatorText.style.display = "none";
+              buttonActivator.style.backgroundColor = "chartreuse";
+            }, 2000);
+            if (AnswerByClick) {
+              clearTimeout(fisrtTimeout);
+            }
+          }, 2000);
+          AnswerByClick = false;
+        } else {
+          buttonActivator.style.backgroundColor = "chartreuse";
+          buttonActivatorText.style.display = "none";
+          score = score + 100;
+          clearInterval(interval);
+          AnswerByClick = true;
+          Answer();
+        }
+      }
+    };
+    setTimeout(() => {
+      console.log("Finished");
+      clearInterval(interval);
+      const banner = document
+        .getElementById("walk-a-mol")
+        .getElementsByTagName("div");
+      banner[1].innerText = "The Game is Comleted, Your score is";
+      banner[2].innerText = score;
+      startByClick = false;
+    }, 10000);
+  </script>
+</html>

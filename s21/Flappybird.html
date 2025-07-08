@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/Flappybird.css">
+    <title>Document</title>
+  </head>
+  <body>
+   <div id="movingbar">
+      <button onclick="randomHight()">Strt</button>
+<ul id="foo">
+  <li>Tier 1</li>
+ 
+ 
+</ul>
+<ul id="bar">
+  <li>Tier 1</li>
+
+ 
+</ul>
+<div class="bird" onclick="randomPath()"></div>
+
+    </div
+    
+  </body>
+  <script>
+    let i1
+    let i2
+    let i3
+    
+    const randomHight = () => {
+      const newArrUp = new Array(1).fill('')
+      const tiersUp = newArrUp.map((item, index)=> {
+        return item = document.getElementById('foo')
+      .getElementsByTagName('li')[index]
+    })
+     const newArrDown = new Array(1).fill('')
+      const tiersDown = newArrDown.map((item, index)=> {
+        return item = document.getElementById('bar')
+      .getElementsByTagName('li')[index]
+    })
+    
+    
+    
+
+      interval = setInterval(() => {
+    const randNum1 =  Math.floor(Math.random() * (100)) + 5
+    // const randNum2 =  Math.floor(Math.random() * (100)) + 5
+   
+ i1 = randNum1
+//  i2 = randNum2
+
+ console.log(i1);
+ console.log(i2);
+ 
+ 
+
+
+ tiersUp.map((li, index) => {
+ tiersUp[0].style.marginBottom = i1 + 'px'
+//  tiersUp[1].style.marginBottom = i2 + 'px'
+
+ setTimeout(() => {
+  tiersUp[0].style.marginBottom = ""
+  // tiersUp[1].style.marginBottom = ""
+ }, 5000)
+
+ })
+
+  }, 10000)
+
+  // interval2 = setInterval(() => {
+  //   tiersUp[0].style.display = 'none'
+  //   tiersDown[0].style.display = 'none'
+  //   const fisrtTimeOut = setTimeout(() => {
+  //   tiersUp[0].style.display = 'block'
+  //   tiersDown[0].style.display = 'block'
+  // }, 1000)
+  // }, 2000)
+  // interval3 = setInterval(() => {
+  //   tiersUp[0].style.transform = 'translateX(120vw)'
+  //   tiersDown[0].style.transform = 'translateX(120vw)'
+  //   const fisrtTimeOut = setTimeout(() => {
+  //   tiersUp[0].style.transform = 'translateX(14vw)'
+  //   tiersDown[0].style.transform = 'translateX(14vw)'
+  // }, 2000)
+
+  // const secondTimeOut = setTimeout(() => {
+  //   tiersUp[0].style.transform = 'translateX(0vw)'
+  //   tiersDown[0].style.transform = 'translateX(0vw)'
+  // }, 3000)
+
+  
+  //  const thirdTimeOut = setTimeout(() => {
+  //   tiersUp[1].style.transform = 'translateX(-14vw)'
+  //   tiersDown[1].style.transform = 'translateX(-14vw)'
+    
+  // }, 2500)
+
+  // const fourthTimeOut = setTimeout(() => {
+  //   tiersUp[1].style.transform = 'translateX(0vw)'
+  //   tiersDown[1].style.transform = 'translateX(0vw)'
+    
+  // }, 3500)
+  
+
+    
+
+  // //   const secondTimeOut = setTimeout(() => {
+  // //   tiersUp[1].style.transform = 'translateX(120vw)'
+  // //   tiersDown[1].style.transform = 'translateX(120vw)'
+  // // }, 1000)
+  // }, 3000)
+  
+}
+const randomPath = () => {
+  const bird = document.getElementById('movingbar')
+  .getElementsByTagName('div')[0]
+  const originalTransform = bird.style.offsetPath
+
+ 
+  
+  
+let i
+const jumpAndReturn = () => {
+   
+  bird.style.offsetPath = 'path("M 15 15 A 6 5.5 -10 0 0 150 15")'
+  bird.animate(
+    {offsetDistance: [0, '100%']}, 
+    {
+      duration: 500, 
+      iterations: 2, 
+      direction: 'alternate'
+    },
+  );
+
+
+// setTimeout(() => {
+//   bird.style.offsetPath = ''
+// }, 1000)
+
+  }
+
+  jumpAndReturn()
+ 
+//   let position = 100
+ 
+//   const frame = () => {
+//     if (position == 150) {
+//       clearInterval(animationInterval)
+//        bird.animate([
+//         {transform: 'translateX(0px)'},
+//         {transform: 'translateX(-150px)'},
+        
+        
+// ],
+//         {
+//           duration: 1000, 
+//           // iterations : Infinity, 
+//           fill: 'forwards' 
+//         }
+//        )
+       
+//     } else {
+//       position++
+//       bird.style.top = position +'px'
+//       bird.style.left = position +'px'
+      
+      
+//     }
+   
+//   }
+//    let animationInterval = setInterval(frame, 20)
+   
+
+}
+ 
+
+
+    
+  </script>
+</html>

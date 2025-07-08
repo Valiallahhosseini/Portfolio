@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "roboto";
+  padding: 30px;
+  text-align: center;
+}
+.container.container--shadow {
+  width: 1200px;
+  height: 200px;
+  background-color: bisque;
+  margin: auto;
+  border-radius: 20px;
+}
+.Hand--closed {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+
+.Hand--display-on {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+.Hand--display-off {
+  display: none;
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+.Hand--list {
+  display: flex;
+}
+.item {
+  list-style: none;
+}

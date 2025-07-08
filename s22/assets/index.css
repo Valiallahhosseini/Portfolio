@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid blue;
+}
+
+#fact_box {
+  display: flex;
+  padding: 0;
+}
+#fact_box li {
+  width: 33.333%;
+  height: 200px;
+  list-style: none;
+  border: 1px solid red;
+}
+.fact_wrap {
+  padding: 0 20px;
+}
+.fact_wrap span {
+  display: block;
+  min-height: 200px;
+}
+.fact_wrap button {
+  /* display: none; */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="heads-or-Tails">
+      <div
+        onclick="flipCoin()"
+        style="background-color: brown; width: 100px; height: 30px"
+      >
+        Flip th Cion
+      </div>
+      <div></div>
+    </div> -->
+    <!-- <div id="question">
+      <div
+        onclick="quiz()"
+        style="background-color: brown; width: 100px; height: 30px"
+      >
+        Start the question
+      </div>
+      <div style="display: none">
+        <div>Which one is the type-warm color?</div>
+        <div onclick="clickByAnswer('Red')">A- Red</div>
+        <div onclick="clickByAnswer('White')">B- White</div>
+      </div>
+    </div> -->
+    <!-- <div id="watch">
+      <button onclick="startWatch()">Start</button> -->
+    <!-- <button onclick="stopWatch()">Stop</button> -->
+
+    <!-- <div></div>
+    </div> -->
+    <form id="first_form" onsubmit="submitForm(event)">
+      <input type="text" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  <script>
+    // const loading = () => {
+    //   const banner = document
+    //     .getElementById("head or tail")
+    //     .getElementsByTagName("div")[0];
+    //   banner.innerText = "Flipping ...";
+
+    //   setTimeout(() => {
+    //     const randNum = Math.floor(Math.random() * 10);
+    //     const result = randNum % 2 ? "Head" : "Tail";
+    //     banner.innerText = result;
+    //   }, 1500);
+    // };
+    // const flipCoin = () => {
+    //   const banner = document
+    //     .getElementById("heads-or-Tails")
+    //     .getElementsByTagName("div")[1];
+    //   banner.innerText = "flipping...";
+
+    //   setTimeout(() => {
+    //     const randNum = Math.floor(Math.random() * 10);
+    //     const result = randNum % 2 ? "Head" : "Tail";
+    //     banner.innerText = result;
+    //   }, 1500);
+    // };
+    // let triviaTimeout = undefined;
+    // let gameInProgress = undefined;
+    // const quiz = () => {
+    //   const question = document
+    //     .getElementById("question")
+    //     .getElementsByTagName("div");
+    //   question[0].style.display = "none";
+    //   question[1].style.display = "block";
+    //   gameInProgress = true;
+    //   triviaTimeout = setTimeout(() => {
+    //     alert("Time is out, you are lost");
+    //     gameInProgress = false;
+    //   }, 20000);
+    // };
+    // const clickByAnswer = (Answer) => {
+    //   if (!gameInProgress) return;
+    //   clearTimeout(triviaTimeout);
+    //   let result = "Red";
+    //   alert(Answer === result ? "Corrcet" : "Wrong");
+    //   gameInProgress = false;
+    // };
+    // let remaining = 10;
+    // let runCountDownTimeout = null;
+    // const runCountDown = () => {
+    //   const banner = document
+    //     .getElementById("watch")
+    //     .getElementsByTagName("div")[0];
+    //   banner.innerText = remaining;
+    //   remaining = remaining - 1;
+
+    //   if (remaining) {
+    //     runCountDownTimeout = setTimeout(() => {
+    //       runCountDown();
+    //     }, 1000);
+    //   } else {
+    //     clearTimeout(runCountDownTimeout);
+    //     banner.innerText = "Finished";
+    //   }
+    //   return;
+    // };
+
+    // let watchRunning = false;
+    // let remaining = 0;
+    // let interval = null;
+
+    // const startWatch = () => {
+    //   if (!watchRunning) {
+    //     const vanner = document
+    //       .getElementById("watch")
+    //       .getElementsByTagName("button")[0];
+    //     vanner.innerText = "pause";
+    //     interval = setInterval(() => {
+    //       const banner = document
+    //         .getElementById("watch")
+    //         .getElementsByTagName("div")[0];
+    //       banner.innerText = remaining;
+    //       remaining++;
+    //       console.log(banner.innerText);
+    //     }, 1000);
+    //     watchRunning = true;
+    //     console.log("Hi");
+    //   } else {
+    //     vanner = document
+    //       .getElementById("watch")
+    //       .getElementsByTagName("button")[0];
+    //     vanner.innerText = "start";
+    //     clearInterval(interval);
+    //     watchRunning = false;
+    //   }
+    // };
+    const submitForm = (e) => {
+      console.log(e);
+      console.log("inside");
+      e.preventDefault();
+
+      const form = document.getElementById("first_form");
+      const submit = document.getElementsByTagName("input")[0];
+      console.log(submit.value);
+
+      setTimeout(() => {
+        alert("Submitted");
+      }, 1000);
+    };
+  </script>
+</html>

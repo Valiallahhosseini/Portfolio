@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+#movingbar {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+#movingbar ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+  position: relative;
+}
+
+#foo li {
+  /* display: none; */
+  height: 100px;
+  list-style: none;
+  background-color: blue;
+  margin-left: 300px;
+}
+#bar li {
+  /* display: none; */
+  height: 100px;
+  background-color: blue;
+  list-style: none;
+  margin-left: 300px;
+}
+.bird {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+}

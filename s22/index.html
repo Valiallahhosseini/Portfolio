@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // const prom = new Promise((resolve, reject) => {
+    //   console.log("Inside Promise");
+    //   reject();
+    // });
+    // console.log(prom);
+    // const double = (x) => {
+    //   return new Promise((resolve, reject) => {
+    //     // console.log("Inside Promise2");
+    //     setTimeout(() => {
+    //       if (x < 10) {
+    //         const result = x * 2;
+    //         resolve(result);
+    //       } else {
+    //         reject(x - 10);
+    //       }
+    //       // console.log("before resolve");
+    //       // console.log("After resolve");
+    //     }, 1000);
+    //     // console.log("After timepout");
+    //   });
+    // };
+    // double(30)
+    //   .then((result) => {
+    //     console.log("result", result);
+    //     double(3)
+    //       .then((result2) => {
+    //         console.log("result2", result2);
+    //       })
+    //       .catch((error2) => {
+    //         console.log("error2", error2);
+    //       });
+    //   })
+    //   .catch((error) => {
+    //     console.log("after double", error);
+    //   });
+
+    // const WrapperDouble = async () => {
+    //   // const foo = await double(2);
+    //   // const boo = await double(3);
+    //   const bar = [double(2), double(3)];
+    //   const result = await Promise.all(bar);
+    //   console.log(result);
+
+    //   try {
+    //     const bar = await double(20);
+    //   } catch (error) {}
+
+    //   // console.log(foo);
+    //   // console.log(boo);
+    // };
+    // WrapperDouble();
+
+    // const getJoke = () => {
+    //   fetch().then((response) => {
+    //     return response.json().then((result) => {
+    //       console.log("result", result);
+    //     });
+    //   });
+
+    // };
+
+    // const getJoke = async () => {
+    //   const fetch = await fetch();
+    //   const result = await fetch.json();
+    // };
+
+    // const Array = [1, 2, 3];
+    // const foo = Array.map((item) => {
+    //   return `<div class="fact-card">
+    //       <div class="fact" id="fact${item}">
+    //         <div classid="loader"></div>
+    //         <button onclick="loadFact${item}"></button>
+    //       </div>
+    //     </div>`;
+    // }).join("");
+
+    // console.log(foo);
+
+    let limit = 100;
+    let a = 0;
+    let b = 1;
+    while (a <= limit) {
+      console.log(a);
+      let temp = a + b;
+      a = b;
+      b = temp;
+    }
+
+    let roll = 1;
+    do {
+      console.log("Rolled a " + roll);
+      ++roll;
+    } while (roll < 7);
+
+    let userLevel = "Admin";
+    let accessLevel;
+
+    const accessCheker = (userLevel) => {
+      if (userLevel === "Admin") {
+        accessLevel = "full access";
+        console.log("Access level", accessLevel);
+      } else if (userLevel === "Manager") {
+        accessLevel = "limited access";
+        console.log("Access level", accessLevel);
+      } else {
+        accessLevel = "No access";
+        console.log("Access level", accessLevel);
+      }
+    };
+    console.log(accessCheker("Devop"));
+  </script>
+</html>
