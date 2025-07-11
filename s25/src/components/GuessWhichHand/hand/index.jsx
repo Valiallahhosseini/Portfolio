@@ -52,6 +52,7 @@ const Hand = () => {
 
   //   setShow(false);
   // };
+
   return (
     <div>
       <div>
